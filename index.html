@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- side bar -->
+        <ul class="sidebar">
+            <li onclick="hideMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li ><a href="#home" onclick="hidebar()">Home</a></li>
+            <li ><a href="#about" onclick="hidebar()">About</a></li>
+            <li ><a href="#project" onclick="hidebar()">Project</a></li>
+            <li ><a href="#contact" onclick="hidebar()">Contact</a></li>
+        </ul>
+        <!-- menu bar -->
+        <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li class="hideMobile"><a href="#home">Home</a></li>
+            <li class="hideMobile"><a href="#about">About</a></li>
+            <li class="hideMobile"><a href="#project">Project</a></li>
+            <li class="hideMobile"><a href="#contact">Contact</a></li>
+            <li onclick="showMenu()" class="menu-bar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                        viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- home section -->
+        <section class="home" id="home">
+            <div class="img-div">
+             <div class="im">
+                <img src="images/suit-2.png" alt="user image" width="500px">
+             </div>
+            </div>
+            <div class="info-div">
+             <h1>mohamed abdulla</h1>
+             <h3>i'm a frontend developer</h3>
+             <p>A highly motivated and detail-oriented frontend developer fresher with a strong foundation in HTML, CSS, JavaScript, and modern framework like  Angular. Proficient in building responsive, user-friendly web interfaces and eager to contribute to innovative projects. 
+                Strong problem-solving skills, a passion for learning, and a commitment to delivering clean and efficient code.</p>
+            <div>
+        </section>
+        <!-- about section -->
+         <section class="about" id="about">
+            <div class="about-me">
+             
+             <div class="info-div">
+                <h3>about me</h3>
+                
+                <p>I'm Mohamed Abdulla ,a passionate and dedicated fresher with an MSc in Computer Science. <br>My expertise lies in frontend development, with hands-on skills in HTML, CSS, JavaScript, Angular, and Node.js.<br> I am eager to contribute to building dynamic, user-friendly, and efficient web applications.<br>
+
+                    In addition to my technical skills, I am fluent in Tamil and English, enabling me to communicate effectively in diverse environments.<br> I am committed to continuous learning and excited to begin my professional journey in web development, where I can apply my knowledge and grow as a developer.</p>
+             </div>
+             
+            </div>
+            <h3>skills</h3>
+            <div class="skills">
+             <div>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/" target="_blank">html</a></li>
+                    <li><a href="https://www.w3schools.com/Css/" target="_blank">css</a></li>
+                    <li><a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank">JavaScript</a></li>
+                 </ul>
+             </div>
+             <div>
+                <ul>
+                    <li><a href="https://angular.dev/" target="_blank">angular</a></li>
+                    <li><a href="https://nodejs.org/en" target="_blank">node</a></li>
+                    <li><a href="https://www.mongodb.com/" target="_blank">mongodb</a>
+             </div>
+            </div>
+         </section>
+         <!-- project section -->
+          <section class="project" id="project">
+            <h3 class="h3-for-min">projects</h3>
+            <div class="content">
+            <h3 class="h3-for-max">projects</h3>
+            <div class="proj-content">
+                <div class="project-1">
+                <a href="https://mohamed-abdulla26.github.io/book-publishing-site/" target="_blank">
+                    <div class="img-div book">
+                
+                    </div>
+                </a>
+                <h3>book publishing site</h3>
+                <p>using html and css</p>
+                </div>
+                <div class="project-2">
+                    <a href="https://mohamed-abdulla26.github.io/book-publishing-site/" target="_blank">
+                        <div class="img-div Portfolio">
+                    
+                        </div>
+                    </a>
+                    <h3>portfolio site</h3>
+                    <p>using html and css</p>
+                    </div>
+                    
+            </div>
+            
+        </div>
+          </section>
+          <!-- contact section -->
+           <section class="contact" id="contact">
+             <div class="main-div">
+                <h3>get in touch</h3>
+                <div class="container">
+                    <div class="left-side">
+                     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                        <input type="hidden" name="access_key" value="06f1f659-9948-4737-b93e-2832941ffb1f">
+                        <div class="form-group">
+                            <input type="text" name="name" required placeholder="your name" class="nameInput">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" required placeholder="your email" class="emailInput">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" placeholder="message here" class="messageInput" ></textarea>
+                        </div>
+                        <button type="submit" onclick="submitform()">submit</button>
+                     </form>
+                    </div>
+                    <div class="right-side">
+                     <img src="images/3d-web-development-illustration-png.webp" width="400px" alt="">
+                    </div>
+                </div>
+             </div>
+           </section>
+    </main>
+    <script src="index.js">
+        
+    </script>
+</body>
+
+</html>
